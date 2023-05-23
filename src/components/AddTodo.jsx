@@ -7,7 +7,6 @@ const AddTodo = (props) => {
 
   const handleChange = (e) => {
     setItem(e.target.value)
-  
   }
 
   const handleSubmit = (e) => {
@@ -15,13 +14,11 @@ const AddTodo = (props) => {
     props.item(item)
   }
   return (
-    <form method="post" onSubmit={handleSubmit}>
+    <form method='post' onSubmit={handleSubmit}>
       <input type="text" name="item" value={item} onChange={handleChange} placeholder="Enter to do" />
       <button type="submit">Add</button>
     </form>
-
   )
-  
 }
 
-export default AddTodo
+export default AddTodo;
